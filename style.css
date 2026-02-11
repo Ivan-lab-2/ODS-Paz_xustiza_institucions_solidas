@@ -1,0 +1,45 @@
+/* Configuración General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Contenedores Genéricos (Requisito: fondo, borde, padding y margen) */
+.contenedor {
+    background-color: #ffffff;
+    border: 2px solid #00689d; /* Azul oficial ODS 16 */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Menú de Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00689d;
+    font-weight: bold;
+}
+
+/* Imágenes y Video */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.img-texto {
+    width: 300px;
+    float: left;
+    margin-right: 15px;
+}
