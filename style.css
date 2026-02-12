@@ -62,6 +62,17 @@ body{
 .resources li{margin:8px 0}
 .resources a{color:var(--accent);text-decoration:none}
 
+/* Infografía: limitar tamaño y centrar */
+#info img{
+    max-width:720px;
+    width:100%;
+    height:auto;
+    display:block;
+    margin:12px auto 0;
+    border-radius:8px;
+    box-shadow:0 8px 20px rgba(3,46,64,0.06);
+}
+
 /* Footer */
 .site-footer{text-align:center;font-size:0.95rem;color:var(--muted)}
 
