@@ -2,43 +2,68 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODS 16 - Paz y Justicia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="contenedor">
-        <h1>ODS 16: Paz, Justicia e Instituciones Sólidas</h1>
-        <nav>
-            <ul>
-                <li><a href="#intro">Inicio</a></li>
-                <li><a href="#metas">Metas</a></li>
-                <li><a href="#recursos">Saber más</a></li>
-                <li><a href="#info">Infografía</a></li>
-                <li><a href="secundaria.html">Datos Destacados (Pág. 2)</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="header-inner contenedor">
+            <div class="brand">
+                <h1>ODS 16</h1>
+                <p class="tag">Paz, Justicia e Instituciones Sólidas</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#intro">Inicio</a></li>
+                    <li><a href="#metas">Metas</a></li>
+                    <li><a href="#recursos">Saber más</a></li>
+                    <li><a href="#info">Infografía</a></li>
+                    <li><a class="secondary" href="secundaria.html">Datos Destacados</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero contenedor">
+            <h2>Promoviendo sociedades justas, pacíficas e inclusivas</h2>
+            <p>Aprende sobre las metas del ODS 16 y cómo puedes contribuir en tu comunidad.</p>
+            <div class="hero-cta">
+                <a href="#metas" class="btn">Ver Metas</a>
+                <a href="#recursos" class="btn ghost">Saber más</a>
+            </div>
+        </div>
     </header>
 
+    <main>
     <section id="intro" class="contenedor">
         <h2>Introducción</h2>
-        <img src="assets/images/ods16-logo.png" alt="Logo ODS 16">
-        <p>El ODS 16 busca promover sociedades justas, pacíficas e inclusivas para el desarrollo sostenible.</p>
+        <div class="intro-grid">
+            <img src="assets/images/ods16-logo.png" alt="Logo ODS 16" class="logo-img">
+            <p>El ODS 16 busca promover sociedades justas, pacíficas e inclusivas para el desarrollo sostenible.</p>
+        </div>
     </section>
 
     <section id="metas" class="contenedor">
         <h2>Objetivos y Metas</h2>
-        <h3>16.1 Reducir la violencia</h3>
-        <p>Reducir significativamente todas las formas de violencia y las tasas de mortalidad conexas en todo el mundo.</p>
-        <img src="assets/images/meta1.jpg" alt="Paz" class="img-texto">
-        <p>Para lograrlo, es necesario fortalecer las leyes y garantizar que la justicia sea accesible para todos.</p>
-        <img src="assets/images/meta2.jpg" alt="Justicia" class="img-texto">
-        <div style="clear:both;"></div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>16.1 Reducir la violencia</h3>
+                <p>Reducir significativamente todas las formas de violencia y las tasas de mortalidad conexas en todo el mundo.</p>
+                <img src="assets/images/meta1.jpg" alt="Paz">
+            </article>
+            <article class="card">
+                <h3>Justicia accesible</h3>
+                <p>Fortalecer leyes y garantizar que la justicia sea accesible para todos.</p>
+                <img src="assets/images/meta2.jpg" alt="Justicia">
+            </article>
+        </div>
     </section>
 
     <section id="recursos" class="contenedor">
         <h2>Páginas para saber más</h2>
-        <ul>
+        <ul class="resources">
             <li><a href="https://www.un.org/sustainabledevelopment/es/peace-justice/">Naciones Unidas - ODS 16</a></li>
             <li><a href="https://www.undp.org/es/sustainable-development-goals/paz-justicia-e-instituciones-solidas">PNUD - Metas globales</a></li>
             <li><a href="https://www.amnesty.org/es/">Amnistía Internacional</a></li>
@@ -49,6 +74,13 @@
         <h2>Infografía del Proyecto</h2>
         <img src="assets/infographics/infografia-ods16.png" alt="Infografía ODS 16">
     </section>
+
+    </main>
+
+    <footer class="site-footer contenedor">
+        <p>Proyecto educativo ODS 16 — Recursos recopilados públicamente.</p>
+        <p>Hecho con ❤️ · <a href="#intro">Volver arriba</a></p>
+    </footer>
 
 </body>
 </html>

@@ -1,45 +1,77 @@
-/* Configuración General */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+:root{
+    --ods-blue: #00689d;
+    --accent: #08a0d8;
+    --muted:#6b7280;
+    --bg:#eef6fa;
 }
 
-/* Contenedores Genéricos (Requisito: fondo, borde, padding y margen) */
-.contenedor {
-    background-color: #ffffff;
-    border: 2px solid #00689d; /* Azul oficial ODS 16 */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+/* Reset & base */
+*{box-sizing:border-box}
+body{
+    font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height:1.6;
+    margin:0;
+    background: linear-gradient(180deg,var(--bg),#f7fbfd);
+    color:#073642;
+    padding:24px;
 }
 
-/* Menú de Navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+.contenedor{
+    background:#fff;
+    border-radius:12px;
+    padding:22px;
+    margin-bottom:20px;
+    border:1px solid rgba(0,104,157,0.12);
+    box-shadow:0 6px 18px rgba(3,46,64,0.04);
+    max-width:1100px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-nav a {
-    text-decoration: none;
-    color: #00689d;
-    font-weight: bold;
+/* Header / Brand */
+.site-header{margin-bottom:18px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand h1{margin:0;font-size:1.6rem;color:var(--ods-blue)}
+.brand .tag{margin:0;color:var(--muted);font-size:0.95rem}
+
+.main-nav ul{display:flex;gap:12px;list-style:none;margin:0;padding:0}
+.main-nav a{display:inline-block;padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--ods-blue);font-weight:600}
+.main-nav a:hover{background:rgba(0,104,157,0.06)}
+.main-nav a.secondary{background:var(--ods-blue);color:#fff}
+
+/* Hero */
+.hero{margin-top:14px;text-align:center;background:linear-gradient(135deg, rgba(0,104,157,0.04), rgba(8,160,216,0.03));padding:28px}
+.hero h2{margin:0 0 8px 0;font-size:1.5rem;color:var(--ods-blue)}
+.hero p{margin:0 0 14px 0;color:var(--muted)}
+.hero-cta{display:flex;gap:10px;justify-content:center}
+.btn{background:var(--ods-blue);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;color:var(--ods-blue);border:2px solid var(--ods-blue)}
+
+/* Intro */
+.intro-grid{display:flex;gap:16px;align-items:center}
+.logo-img{width:120px;height:auto}
+
+/* Cards for metas */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
+.card{padding:16px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfeff);box-shadow:0 6px 14px rgba(3,46,64,0.03);border:1px solid rgba(0,104,157,0.06)}
+.card h3{margin-top:0;color:var(--ods-blue)}
+.card img{width:100%;border-radius:8px;margin-top:8px}
+
+/* Resources */
+.resources{padding-left:18px}
+.resources li{margin:8px 0}
+.resources a{color:var(--accent);text-decoration:none}
+
+/* Footer */
+.site-footer{text-align:center;font-size:0.95rem;color:var(--muted)}
+
+/* Responsive tweaks */
+@media (max-width:720px){
+    .header-inner{flex-direction:column;align-items:flex-start}
+    .hero h2{font-size:1.25rem}
+    body{padding:14px}
 }
 
-/* Imágenes y Video */
-img, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-}
+/* Accessibility focus */
+a:focus{outline:3px solid rgba(8,160,216,0.18);outline-offset:3px}
 
-.img-texto {
-    width: 300px;
-    float: left;
-    margin-right: 15px;
-}
